@@ -20,7 +20,9 @@ const ContactListItem = ({ id, name, number, onDeleteClick }) => {
 };
 
 ContactListItem.propTypes = {
-  contacts: PropTypes.array.isRequired,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
   onDeleteClick: PropTypes.func.isRequired,
 };
 
